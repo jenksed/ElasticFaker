@@ -1,0 +1,427 @@
+[
+  {
+    "username": "stacey94",
+    "email": "april39@example.org",
+    "created_at": "2023-09-16 07:00:55.166436",
+    "orders": [
+      {
+        "product": "certainly",
+        "quantity": 26,
+        "price": 456.75
+      },
+      {
+        "product": "onto",
+        "quantity": 26,
+        "price": 690.22
+      }
+    ]
+  },
+  {
+    "username": "michelle98",
+    "email": "andrea30@example.net",
+    "created_at": "2020-06-11 16:15:28.474146",
+    "orders": [
+      {
+        "product": "draw",
+        "quantity": 92,
+        "price": 946.67
+      },
+      {
+        "product": "field",
+        "quantity": 35,
+        "price": 172.52
+      }
+    ]
+  },
+  {
+    "username": "yburch",
+    "email": "rhondaanderson@example.com",
+    "created_at": "2023-11-26 10:15:06.641271",
+    "orders": [
+      {
+        "product": "structure",
+        "quantity": 30,
+        "price": 688.38
+      },
+      {
+        "product": "clearly",
+        "quantity": 68,
+        "price": 180.46
+      }
+    ]
+  },
+  {
+    "username": "kharris",
+    "email": "hbrown@example.org",
+    "created_at": "2023-04-21 18:23:45.706003",
+    "orders": [
+      {
+        "product": "system",
+        "quantity": 77,
+        "price": 717.98
+      },
+      {
+        "product": "pretty",
+        "quantity": 50,
+        "price": 703.43
+      }
+    ]
+  },
+  {
+    "username": "fscott",
+    "email": "lindsey90@example.org",
+    "created_at": "2023-04-15 07:50:39.051265",
+    "orders": [
+      {
+        "product": "success",
+        "quantity": 55,
+        "price": 501.31
+      },
+      {
+        "product": "official",
+        "quantity": 84,
+        "price": 730.52
+      }
+    ]
+  },
+  {
+    "username": "ashleyhenry",
+    "email": "michellehoffman@example.com",
+    "created_at": "2024-01-10 11:15:52.324776",
+    "orders": [
+      {
+        "product": "woman",
+        "quantity": 70,
+        "price": 865.18
+      },
+      {
+        "product": "case",
+        "quantity": 32,
+        "price": 870.31
+      }
+    ]
+  },
+  {
+    "username": "gomezhenry",
+    "email": "tcline@example.com",
+    "created_at": "2022-04-11 02:29:39.517185",
+    "orders": [
+      {
+        "product": "our",
+        "quantity": 94,
+        "price": 791.57
+      },
+      {
+        "product": "science",
+        "quantity": 68,
+        "price": 759.1
+      }
+    ]
+  },
+  {
+    "username": "ddoyle",
+    "email": "wgeorge@example.com",
+    "created_at": "2023-05-18 04:06:29.580547",
+    "orders": [
+      {
+        "product": "soldier",
+        "quantity": 60,
+        "price": 114.95
+      },
+      {
+        "product": "ever",
+        "quantity": 71,
+        "price": 397.81
+      }
+    ]
+  },
+  {
+    "username": "odurham",
+    "email": "iflynn@example.org",
+    "created_at": "2024-09-18 20:23:54.395203",
+    "orders": [
+      {
+        "product": "song",
+        "quantity": 59,
+        "price": 438.34
+      },
+      {
+        "product": "second",
+        "quantity": 52,
+        "price": 769.93
+      }
+    ]
+  },
+  {
+    "username": "gcummings",
+    "email": "james44@example.org",
+    "created_at": "2024-09-17 09:18:01.237156",
+    "orders": [
+      {
+        "product": "agent",
+        "quantity": 35,
+        "price": 343.91
+      },
+      {
+        "product": "drop",
+        "quantity": 87,
+        "price": 271.52
+      }
+    ]
+  },
+  {
+    "username": "deborahlozano",
+    "email": "johnsonchad@example.net",
+    "created_at": "2023-10-17 05:19:12.880733",
+    "orders": [
+      {
+        "product": "center",
+        "quantity": 22,
+        "price": 882.59
+      },
+      {
+        "product": "college",
+        "quantity": 68,
+        "price": 637.16
+      }
+    ]
+  },
+  {
+    "username": "polson",
+    "email": "christopher01@example.net",
+    "created_at": "2021-10-14 11:05:51.833239",
+    "orders": [
+      {
+        "product": "less",
+        "quantity": 20,
+        "price": 419.44
+      },
+      {
+        "product": "notice",
+        "quantity": 24,
+        "price": 692.89
+      }
+    ]
+  },
+  {
+    "username": "victoriaharmon",
+    "email": "jessicaruiz@example.com",
+    "created_at": "2024-08-31 10:17:14.629826",
+    "orders": [
+      {
+        "product": "dinner",
+        "quantity": 80,
+        "price": 912.23
+      },
+      {
+        "product": "majority",
+        "quantity": 31,
+        "price": 676.02
+      }
+    ]
+  },
+  {
+    "username": "baileyrodriguez",
+    "email": "steven53@example.org",
+    "created_at": "2025-05-01 04:26:54.146459",
+    "orders": [
+      {
+        "product": "they",
+        "quantity": 89,
+        "price": 463.82
+      },
+      {
+        "product": "safe",
+        "quantity": 74,
+        "price": 438.16
+      }
+    ]
+  },
+  {
+    "username": "virginiajohnson",
+    "email": "colemanscott@example.net",
+    "created_at": "2024-11-30 04:02:36.926870",
+    "orders": [
+      {
+        "product": "nature",
+        "quantity": 99,
+        "price": 148.75
+      },
+      {
+        "product": "arrive",
+        "quantity": 87,
+        "price": 190.5
+      }
+    ]
+  },
+  {
+    "username": "luke87",
+    "email": "wattsthomas@example.org",
+    "created_at": "2025-03-31 07:37:25.138095",
+    "orders": [
+      {
+        "product": "ahead",
+        "quantity": 43,
+        "price": 424.46
+      },
+      {
+        "product": "among",
+        "quantity": 41,
+        "price": 854.17
+      }
+    ]
+  },
+  {
+    "username": "rachel79",
+    "email": "stephen54@example.com",
+    "created_at": "2023-02-01 13:39:52.487261",
+    "orders": [
+      {
+        "product": "reach",
+        "quantity": 97,
+        "price": 20.06
+      },
+      {
+        "product": "never",
+        "quantity": 51,
+        "price": 329.61
+      }
+    ]
+  },
+  {
+    "username": "maygerald",
+    "email": "tmendoza@example.com",
+    "created_at": "2021-05-15 00:21:36.126109",
+    "orders": [
+      {
+        "product": "court",
+        "quantity": 57,
+        "price": 143.06
+      },
+      {
+        "product": "yeah",
+        "quantity": 59,
+        "price": 589.15
+      }
+    ]
+  },
+  {
+    "username": "joseph85",
+    "email": "garymurphy@example.org",
+    "created_at": "2025-03-01 07:10:14.722557",
+    "orders": [
+      {
+        "product": "life",
+        "quantity": 55,
+        "price": 655.27
+      },
+      {
+        "product": "former",
+        "quantity": 75,
+        "price": 91.25
+      }
+    ]
+  },
+  {
+    "username": "deanna16",
+    "email": "gatesdavid@example.com",
+    "created_at": "2020-10-13 11:54:51.597080",
+    "orders": [
+      {
+        "product": "begin",
+        "quantity": 75,
+        "price": 333.78
+      },
+      {
+        "product": "along",
+        "quantity": 49,
+        "price": 266.67
+      }
+    ]
+  },
+  {
+    "username": "christina76",
+    "email": "manningtara@example.com",
+    "created_at": "2020-10-10 18:43:52.227055",
+    "orders": [
+      {
+        "product": "religious",
+        "quantity": 52,
+        "price": 828.49
+      },
+      {
+        "product": "such",
+        "quantity": 76,
+        "price": 202.02
+      }
+    ]
+  },
+  {
+    "username": "qyoung",
+    "email": "roseeric@example.org",
+    "created_at": "2023-02-17 17:13:12.355210",
+    "orders": [
+      {
+        "product": "budget",
+        "quantity": 24,
+        "price": 470.45
+      },
+      {
+        "product": "clear",
+        "quantity": 30,
+        "price": 812.84
+      }
+    ]
+  },
+  {
+    "username": "tmills",
+    "email": "matthew18@example.com",
+    "created_at": "2024-02-26 06:33:58.219859",
+    "orders": [
+      {
+        "product": "administration",
+        "quantity": 43,
+        "price": 808.76
+      },
+      {
+        "product": "manager",
+        "quantity": 39,
+        "price": 263.23
+      }
+    ]
+  },
+  {
+    "username": "omontgomery",
+    "email": "andrea86@example.com",
+    "created_at": "2021-01-27 07:43:03.738799",
+    "orders": [
+      {
+        "product": "determine",
+        "quantity": 90,
+        "price": 97.25
+      },
+      {
+        "product": "approach",
+        "quantity": 38,
+        "price": 661.21
+      }
+    ]
+  },
+  {
+    "username": "kerrmichael",
+    "email": "stephanie82@example.net",
+    "created_at": "2022-09-24 07:14:26.830197",
+    "orders": [
+      {
+        "product": "miss",
+        "quantity": 26,
+        "price": 154.67
+      },
+      {
+        "product": "economic",
+        "quantity": 37,
+        "price": 387.11
+      }
+    ]
+  }
+]
