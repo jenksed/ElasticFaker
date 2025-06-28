@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "properties": {
+      "username": { "type": "keyword" },
+      "email": { "type": "keyword" },
+      "created_at": { "type": "date" },
+      "age": { "type": "integer" },
+
+      "profile": {
+        "type": "object",
+        "properties": {
+          "first_name": { "type": "text" },
+          "last_name": { "type": "text" },
+          "bio": { "type": "text" }
+        }
+      },
+
+      "address": {
+        "type": "object",
+        "properties": {
+          "street": { "type": "text" },
+          "city": { "type": "keyword" },
+          "postal_code": { "type": "keyword" },
+          "country": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}
