@@ -17,7 +17,7 @@ def interactive_mode(mapping_path, count, override_path):
     if save == 'y':
         file_path = input("Enter filename (e.g., output.json): ").strip()
         with open(file_path, 'w') as f:
-            json.dump(docs, f, indent=2)
+            json.dump(docs, f, indent=2, default=str)
         print(f"✅ Saved to {file_path}")
     else:
         print("❌ Skipping file save.")
