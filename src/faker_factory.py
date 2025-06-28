@@ -18,7 +18,7 @@ FIELD_TYPE_MAP = {
     "email": lambda: faker.email()
 }
 
-# Auto-overrides based on common field names
+# Auto-matching by common field names
 FIELD_NAME_OVERRIDES = {
     "email": lambda: faker.email(),
     "username": lambda: faker.user_name(),
@@ -42,14 +42,6 @@ def load_mapping(mapping_path):
 
 
 def load_custom_overrides(file_path="faker-overrides.json"):
-    """
-    Load user-defined field overrides from a JSON file.
-    Example:
-        {
-            "email": "email",
-            "created_at": "date_time_this_century"
-        }
-    """
     if not os.path.exists(file_path):
         return {}
 
@@ -57,34 +49,51 @@ def load_custom_overrides(file_path="faker-overrides.json"):
         raw = json.load(f)
 
     overrides = {}
-    for field, faker_func_name in raw.items():
-        try:
-            faker_func = getattr(faker, faker_func_name)
-            overrides[field] = faker_func
-        except AttributeError:
-            print(f"⚠️ Warning: Faker has no method '{faker_func_name}' for field '{field}'")
+    for field, override in raw.items():
+        # Simple function override: { "email": "email" }
+        if isinstance(override, str):
+            try:
+                overrides[field] = getattr(faker, override)
+            except AttributeError:
+                print(f"⚠️ Warning: Faker has no method '{override}' for field '{field}'")
+        # Structured override for nested fields: { "orders": { "count": 3 } }
+        elif isinstance(override, dict):
+            overrides[field] = override
 
     return overrides
 
 
 def generate_field_value(field_name, field_type, custom_overrides):
-    """Choose faker function based on (1) custom overrides, (2) name match, (3) type match."""
     if field_name in custom_overrides:
-        return custom_overrides[field_name]()
+        override = custom_overrides[field_name]
+        if callable(override):
+            return override()
     if field_name in FIELD_NAME_OVERRIDES:
         return FIELD_NAME_OVERRIDES[field_name]()
     return FIELD_TYPE_MAP.get(field_type, lambda: faker.word())()
 
 
 def generate_doc_from_properties(properties, custom_overrides):
-    """Recursively generate a document from a field -> type map."""
     doc = {}
     for field, spec in properties.items():
-        if spec.get("type") == "object" and "properties" in spec:
-            doc[field] = generate_doc_from_properties(spec["properties"], custom_overrides)
+        field_type = spec.get("type", "text")
+
+        if field_type in ("object", "nested") and "properties" in spec:
+            nested_doc = lambda: generate_doc_from_properties(spec["properties"], custom_overrides)
+
+            if field_type == "nested":
+                count = (
+                    custom_overrides.get(field, {}).get("count")
+                    if isinstance(custom_overrides.get(field), dict)
+                    else random.randint(1, 3)
+                )
+                doc[field] = [nested_doc() for _ in range(count)]
+            else:
+                doc[field] = nested_doc()
+
         else:
-            field_type = spec.get("type", "text")
             doc[field] = generate_field_value(field, field_type, custom_overrides)
+
     return doc
 
 

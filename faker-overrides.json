@@ -1,0 +1,8 @@
+{
+  "username": "user_name",
+  "email": "email",
+  "created_at": "date_time_this_decade",
+  "orders": {
+    "count": 2
+  }
+}

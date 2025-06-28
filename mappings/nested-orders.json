@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "properties": {
+      "username": { "type": "keyword" },
+      "email": { "type": "keyword" },
+      "created_at": { "type": "date" },
+      "orders": {
+        "type": "nested",
+        "properties": {
+          "product": { "type": "keyword" },
+          "quantity": { "type": "integer" },
+          "price": { "type": "float" }
+        }
+      }
+    }
+  }
+}

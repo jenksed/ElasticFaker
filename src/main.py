@@ -4,13 +4,12 @@ from elastic_client import create_index, bulk_insert
 from faker_factory import generate_docs
 
 
-
-def interactive_mode(mapping_path, count):
+def interactive_mode(mapping_path, count, override_path):
     print(f"🧪 Generating {count} fake documents from {mapping_path}...\n")
-    docs = generate_docs(mapping_path, count)
+    docs = generate_docs(mapping_path, count, override_path)
 
     for i, doc in enumerate(docs):
-        print(f"[Doc {i+1}] {json.dumps(doc, indent=2)}")
+        print(f"[Doc {i+1}] {json.dumps(doc, indent=2, default=str)}")
 
     print("\n📦 Preview complete.")
 
@@ -31,18 +30,19 @@ def main():
     parser.add_argument("--count", type=int, default=100, help="Number of documents to generate")
     parser.add_argument("--reset", action="store_true", help="Delete and recreate index")
     parser.add_argument("--interactive", "-i", action="store_true", help="Interactive mode: preview data and optionally export")
+    parser.add_argument("--faker-overrides", default="faker-overrides.json", help="Path to faker override config file")
 
     args = parser.parse_args()
 
     if args.interactive:
-        interactive_mode(args.mapping, args.count)
+        interactive_mode(args.mapping, args.count, args.faker_overrides)
         return
 
     if not args.index:
         print("❌ --index is required when not in interactive mode.")
         return
 
-    docs = generate_docs(args.mapping, args.count)
+    docs = generate_docs(args.mapping, args.count, args.faker_overrides)
     create_index(args.index, args.mapping, reset=args.reset)
     bulk_insert(args.index, docs)
 
